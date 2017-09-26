@@ -154,7 +154,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-								<a href="#" class="fh5co-feature to-animate">
+								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal" onClick="setCD('oconexion')">
 									<figure class="effect-lexi" data-toggle="modal" data-target="#myModal"
 											onClick="setCD('oconexion')" >
 									<img id = "cd_three" src="images/cover_img/numasbala_operacion_conexion.png"
@@ -166,7 +166,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-								<a href="#" class="fh5co-feature to-animate">
+								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal" onClick="setCD('oconexion')">
 								   <figure class="effect-lexi" data-toggle="modal" data-target="#myModal"
 										   onclick="setCD('aver')">
 								   <img id ="cd_two" src="images/cover_img/numasbala_a_ver.png" class="cd_img"
@@ -177,15 +177,55 @@
 								</a>
 							</div>
 							
-							
-
 							<div class="clearfix visible-sm-block"></div>
-
 							<div class="fh5co-spacer fh5co-spacer-sm"></div>
-
 							<div class="col-md-4 col-md-offset-4 text-center to-animate">
 								<a href="#" class="btn btn-primary">Get lost in space</a>
 							</div>
+							
+						
+							
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Mailing List</h4>
+								  </div>
+								  <div class="modal-body">
+									Subscribe to get FREE CD :
+									  <style>
+										#loadImg{position:absolute;z-index:999;}
+										#loadImg div{display:table-cell;width:650px;background:#fff;text-align:center;vertical-align:middle;}
+										</style>
+									  <div id="loadImg"><div><img src="images/loading.gif" /></div></div>
+
+									<iframe id="cd_Iframe" width="350" height="154" src="https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;" onload="document.getElementById('loadImg').style.display='none';"></iframe>
+
+								  </div>
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+								  </div>
+								</div>
+							  </div>
+							</div>
+		
+							
+							 <script>
+		 // function that sets what form is going to execute (new cd/ old cd)
+		 function setCD(cd) {
+			
+			 document.getElementById('loadImg').style.display='block';
+			if(cd == 'mapas') {
+				document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3";
+			}
+			 else {
+				document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1";
+			 }
+		 }
+		 
+	 </script>
 			        	</div>
 			       </div>
 			       
