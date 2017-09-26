@@ -168,51 +168,9 @@
 		});
 	};
 
-	// Counter 
-	var counter = function() {
-		$('.js-counter').countTo({
-			formatter: function (value, options) {
-		      	return value.toFixed(options.decimals);
-		    },
-		});
-	};
-
-	//  Faqs Accordion
-	var faqsAccordion = function() {
-
-		var faqAcc = $('.faq-accordion h3');
-
-		// Click
-		faqAcc.on('click', function(event){
-			var $this = $(this);
-			
-			$('.faq-accordion').removeClass('active');
-			$('.faq-accordion').find('.faq-body').slideUp(400, 'easeInOutExpo');
-
-			if ( !$this.closest('.faq-accordion').find('.faq-body').is(':visible')) {
-				$this.closest('.faq-accordion').addClass('active');
-				$this.closest('.faq-accordion').find('.faq-body').slideDown(400, 'easeInOutExpo');
-			} else {
-				$this.closest('.faq-accordion').removeClass('active');
-				$this.closest('.faq-accordion').find('.faq-body').slideUp(400, 'easeInOutExpo');
-			}
 
 
-			setTimeout(function(){
-				// alert($this.closest('.faq-accordion.active').innerHeight());
-				$('html, body').animate({
-			        scrollTop: $this.closest('.faq-accordion.active').offset().top - 90
-			    }, 500);
-			}, 700);
-			
-			
-			event.preventDefault();
-			return false;
-
-		});
-
-	};
-
+	
 	// Click outside of offcanvass
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
@@ -710,7 +668,6 @@
 		offCanvass();
 		mobileMenuOutsideClick();
 		footerFixed();
-		faqsAccordion();
 		carouselTestimony();
 		carouselSchedule();
 		carouselVideo();
@@ -736,3 +693,18 @@
 
 
 }());
+
+
+	 // function that sets what form is going to execute (new cd/ old cd)
+	function setCD(cd) {
+			
+//	document.getElementById('loadImg').style.display='block';
+//	if(cd == 'mapas') {
+//		//document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3";
+//	}
+//	 else {
+//		//document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1";
+//	 }
+ }
+		 
+	 

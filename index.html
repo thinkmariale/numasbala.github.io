@@ -12,7 +12,7 @@
 	<meta name="description" content="Latin reggue music band" />
 	<meta name="keywords" content="latin, cumbia, music, numasbala, reggue,funk, colombia" />
 	<meta name="author" content="Numasbala" />
-
+ <link rel="icon" href="images/favicon.ico">
   
 
   	<!-- Facebook and Twitter integration -->
@@ -32,6 +32,7 @@
 	<!-- Google Webfonts -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -74,7 +75,9 @@
 			<a href="https://www.facebook.com/numasbala" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>
 			<a href=" https://instagram.com/numasbala" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
 			<a href="http://www.youtube.com/user/numasbala"  title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
+			<a href="https://open.spotify.com/artist/0AcapFfxUCOQ7vUZaZMXgw"  title="Youtube" target="_blank"><i class="icon-music"></i></a>
 		</p>
+		<iframe width="200" height="25" src="https://embed.spotify.com/follow/1/?uri=spotify%3Aartist%3A0AcapFfxUCOQ7vUZaZMXgw&amp;size=basic&amp;theme=dark" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 	</div>
 	
 	<div id="fh5co-menu" class="navbar">
@@ -88,6 +91,31 @@
 		</div>
 	</div>
 
+	<!-- MODAL		-->
+	<div class="modal fade" id="myModal" tabindex="10" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Mailing List</h4>
+		  </div>
+		  <div class="modal-body">
+			Subscribe to get FREE CD :
+			  <style>
+				#loadImg{position:absolute;z-index:999;}
+				#loadImg div{display:table-cell;width:650px;background:#fff;text-align:center;vertical-align:middle;}
+				</style>
+<!--			  <div id="loadImg"><div><img src="images/loading.gif" /></div></div>-->
+
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!--  ENF MODAL -->
 	<div id="fh5co-page">
 		<div id="fh5co-wrap">
 			<header id="fh5co-hero" data-section="home" role="banner" style="background: url(images/space/dark_c.png) top left; background-size: cover;" >
@@ -96,15 +124,27 @@
 					<div class="container">
 						<div class="row">
 							
+							
+							
+
 							<div class="col-md-6 fh5co-text">
 								<h2 class="to-animate intro-animate-1">Capitan Placer</h2>
 								<p class="to-animate intro-animate-2">Invites you to join our intergalactic journey</p>
 <!--								<p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"><i class="icon-apple"></i> See on AppStore</a></p>-->
 							</div>
-							<div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4">
+							
+							<div class="col-md-6 text-left  to-animate intro-animate-4">
 <!--								<img src="images/numasbala_logo_black_.svg">-->
+								
+								<!-- MUSIC PLAYER  class="align-left"-->
+								
+									<div style="padding-top:130px">
+										<section>
+											<div id="mh" class="music_box"> </div>       
+											<div id="musicTab" class="music_home"> </div>
+										</section>
+									 </div>
 							</div>
-
 						</div>
 					</div>						
 				</div>
@@ -115,16 +155,19 @@
 				<div id="fh5co-clients">
 					<div class="container">
 						<div class="row text-center">
-							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+							<div class="col-md-2 col-sm-6 col-xs-6 to-animate">
 								<figure class="fh5co-client"><img src="images/facebook.png" alt="Facebook"></figure>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+								<figure class="fh5co-client"><img src="images/spotify.png" alt="Spotify"></figure>
+							</div>
+							<div class="col-md-2 col-sm-6 col-xs-6 to-animate">
 								<figure class="fh5co-client"><img src="images/instagram_t.png" alt="Instagram"></figure>
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
 								<figure class="fh5co-client"><img src="images/twitter.png" alt="Twitter"></figure>
 							</div>
-							<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+							<div class="col-md-2 col-sm-6 col-xs-6 to-animate">
 								<figure class="fh5co-client"><img src="images/yout.png" alt="YouTube"></figure>
 							</div>
 						</div>
@@ -140,23 +183,20 @@
 								<p class="fh5co-sub to-animate">A collection of our latest intergalactic work!</p>
 								<p class="fh5co-sub to-animate">Enjoy our free downloads</p>
 							</div>
+							
 							<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-								<a href="#" class="fh5co-feature to-animate">
-								   <figure class="effect-lexi" data-toggle="modal" 
-										   data-target="#myModal"  onclick="setCD('mapas')">
-								   <img id ="cd_one" src="images/cover_img/MapasPerdidos.png" class="cd_img"
-										alt="funk latin music" title="Mapas Perdidos CD" 
-										data-toggle="modal" data-target="#myModal" />		
-									</figure>
-			  
+								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal"  onclick="setCD('mapas')">
+									<figure class="effect-lexi" >
+									<img id = "cd_three" src="images/cover_img/MapasPerdidos.png" class="cd_img"
+										 alt="funk latin/funk music" title="Mapas Perdidos CD" />
+									</figure>	
 									<h3 class="fh5co-feature-lead">2016</h3>
 									<p class="fh5co-feature-text">Mapas Perdidos</p>
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal" onClick="setCD('oconexion')">
-									<figure class="effect-lexi" data-toggle="modal" data-target="#myModal"
-											onClick="setCD('oconexion')" >
+								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal"  onclick="setCD('oconecion')">
+									<figure class="effect-lexi" >
 									<img id = "cd_three" src="images/cover_img/numasbala_operacion_conexion.png"
 										 class="cd_img"
 										 alt="funk latin/funk music" title="Operacion Conexion CD" />
@@ -166,9 +206,8 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal" onClick="setCD('oconexion')">
-								   <figure class="effect-lexi" data-toggle="modal" data-target="#myModal"
-										   onclick="setCD('aver')">
+								<a href="#" class="fh5co-feature to-animate" data-toggle="modal" data-target="#myModal"  onclick="setCD('aver')">
+								   <figure class="effect-lexi">
 								   <img id ="cd_two" src="images/cover_img/numasbala_a_ver.png" class="cd_img"
 										alt="funk latin music" title="A Ver CD"/>	
 									</figure>
@@ -182,58 +221,14 @@
 							<div class="col-md-4 col-md-offset-4 text-center to-animate">
 								<a href="#" class="btn btn-primary">Get lost in space</a>
 							</div>
-							
-						
-							
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-							  <div class="modal-dialog" role="document">
-								<div class="modal-content">
-								  <div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-									<h4 class="modal-title" id="myModalLabel">Mailing List</h4>
-								  </div>
-								  <div class="modal-body">
-									Subscribe to get FREE CD :
-									  <style>
-										#loadImg{position:absolute;z-index:999;}
-										#loadImg div{display:table-cell;width:650px;background:#fff;text-align:center;vertical-align:middle;}
-										</style>
-									  <div id="loadImg"><div><img src="images/loading.gif" /></div></div>
 
-									<iframe id="cd_Iframe" width="350" height="154" src="https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;" onload="document.getElementById('loadImg').style.display='none';"></iframe>
-
-								  </div>
-								  <div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-								  </div>
-								</div>
-							  </div>
-							</div>
-		
-							
-							 <script>
-		 // function that sets what form is going to execute (new cd/ old cd)
-		 function setCD(cd) {
-			
-			 document.getElementById('loadImg').style.display='block';
-			if(cd == 'mapas') {
-				document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3";
-			}
-			 else {
-				document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1";
-			 }
-		 }
-		 
-	 </script>
 			        	</div>
 			       </div>
 			       
-
 			    </div>
 				
 
-
+				
 			    <div id="fh5co-features-2" data-section="about"  style="background-image: url(images/space/light2_med.png); background-size: cover;">
 					<div class="fh5co-features-2-content">
 					    <div class="container">
@@ -524,7 +519,10 @@
 								<a href="https://www.facebook.com/numasbala" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>
 								<a href=" https://instagram.com/numasbala" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
 								<a href="http://www.youtube.com/user/numasbala"  title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
+								<a href="https://open.spotify.com/artist/0AcapFfxUCOQ7vUZaZMXgw"  title="Youtube" target="_blank"><i class="icon-music"></i></a>
+								
 							</p>
+							<iframe width="200" height="25" src="https://embed.spotify.com/follow/1/?uri=spotify%3Aartist%3A0AcapFfxUCOQ7vUZaZMXgw&amp;size=basic&amp;theme=dark" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
 						</div>
 						
 					</div>
@@ -552,7 +550,29 @@
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 
-	
+	<!-- music player -->
+    <script type="text/javascript" src="js/MusicPlayer/plugin/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/MusicPlayer/plugin/ttw-music-player.js"></script>
+    <script type="text/javascript" src="js/MusicPlayer/myplaylist.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/MusicPlayer/plugin/css/style.css">
+<!--	 <script src="js/language.js"></script>-->
+
+	  <script>
+		  
+		  
+		  //Initialize the plugin
+        $(document).ready(function () {
+		
+            $('.music_box').ttwMusicPlayer(myPlaylist, {
+                autoPlay: false,
+               tracksToShow: 4,
+                description: "",
+                jPlayer: {
+                    swfPath: 'js/MusicPlayer/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+		});
+	  </script>
 
 	
 	</body>

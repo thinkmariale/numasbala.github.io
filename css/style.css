@@ -6422,6 +6422,7 @@ button.close {
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
+	overflow-y: scroll;
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
@@ -6438,6 +6439,7 @@ button.close {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
+	
 }
 
 .modal-open .modal {
@@ -6461,6 +6463,7 @@ button.close {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
+	 z-index: 10050;
 }
 
 .modal-backdrop {
@@ -9174,3 +9177,4 @@ a > img.fh5co-align-center {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
