@@ -6,7 +6,7 @@
 
 var myPlaylist = [
 	 {
-        mp3: 'https://www.dropbox.com/s/roor9at02qrfaz3/Recort%C3%A9%20un%20pedazo%20del%20cielo.wav?dl=0',
+        mp3: '../../music/aguila_maligna.mp3',
         title: 'Recorté un pedazo del cielo',
         artist: 'Numasbala, Mapas Perdidos',
         duration: '4:00',
