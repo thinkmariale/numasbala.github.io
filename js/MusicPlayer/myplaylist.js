@@ -41,7 +41,7 @@ var myPlaylist = [
         cover: 'images/operacion_c.jpg'
     },
    {
-        mp3: 'https://www.dropbox.com/s/arfwhce6lqh7pb8/04%20Guapa.mp3?dl=0',
+        mp3: 'https://drive.google.com/open?id=0B6nix9AaDABkSXpiRnIyTHJMR0k',
         title: 'Guapa',
         artist: 'Numasbala, A Ver',
         duration: '3:56',
