@@ -323,6 +323,9 @@ th {
 .main_logo {
 	width: 60%;
 }
+.main_logo_s {
+	width: 30%;
+}
 
 
 /*---------*/
@@ -7653,17 +7656,37 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
-  #fh5co-hero .fh5co-intro h2 {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
 #fh5co-hero .fh5co-intro p {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: .05em;
 }
+.fh5co-music {
+	padding-top:130px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .fh5co-intro h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .fh5co-music {
+	padding-top:40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-hero .fh5co-intro h2 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  #fh5co-hero .fh5co-intro p {
+    font-size: 15px;
+    letter-spacing: .05em;
+  }
+ .fh5co-music {
+	padding-top:40px;
+  }
+}
+
 #fh5co-hero .fh5co-intro .btn {
   background: #30beac;
 }
@@ -7740,13 +7763,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #fh5co-clients .fh5co-client {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-clients .fh5co-client img {
     max-width: 100%;
   }
+   #fh5co-clients {
+	   padding-bottom: 0px;
+	   padding-top: 15px;
+   }
 }
 
 #fh5co-pricing {
