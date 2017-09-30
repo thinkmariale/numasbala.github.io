@@ -100,11 +100,12 @@
 			<h4 class="modal-title" id="myModalLabel">Mailing List</h4>
 		  </div>
 		  <div class="modal-body">
-			Subscribe to get FREE CD :
+			Subscribe to get all CD's by email (FREE) :
 			  <style>
 				#loadImg{position:absolute;z-index:999;}
 				#loadImg div{display:table-cell;width:650px;background:#fff;text-align:center;vertical-align:middle;}
 				</style>
+			  <iframe width="350" height="143" src="https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;"></iframe>
 <!--			  <div id="loadImg"><div><img src="images/loading.gif" /></div></div>-->
 
 		  </div>
@@ -480,37 +481,108 @@
 			    </div>
 
 				
-
 				<div id="fh5co-subscribe">
-					<div class="container">
-						<div class="row animate-box">
-							<form action="#" method="post">
-								<div class="col-md-3 col-sm-3">
+				<div class="container">
+					<div class="row animate-box">
+						<div id="sib_embed_signup" style="padding: 10px;">
+						
+    					<div class="forms-builder-wrapper" style="position:relative;margin-left: auto;margin-right: auto;">
+							<input type="hidden" id="sib_embed_signup_lang" value="en">
+							<input type="hidden" id="sib_embed_invalid_email_message" value="That email address is not valid. Please try again">
+							<input type="hidden" name="primary_type" id="primary_type" value="email">
+							<div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
+							  <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" 
+								   style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
+							</div>
+                			<form class="description" id="theform" name="theform"
+								 action="https://my.sendinblue.com/users/subscribeembed/js_id/2abe8/id/2"  onsubmit="return false;">
+								<input type="hidden" name="js_id" id="js_id" value="2abe8">
+								<input type="hidden" name="listid" id="listid" value="4">
+								<input type="hidden" name="from_url" id="from_url" value="yes">
+								<input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+								<div class="col-md-3 col-sm-3 "></div>
+								
+								<div class="sib-container col-md-3 col-sm-3">
+								  <input type="hidden" name="req_hid" id="req_hid" value="" 
+										 style="font-family: 'Trebuchet MS', Verdana, Tahoma, Geneva, sans-serif; font-size: 13px;">
+            
+									<div class="view-messages"> </div>
+									<div class="email-group ui-sortable">
+										<div class="row mandatory-email" style="padding: 10px; position: relative;
+											font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif; font-size: 15px; ">
+										<input type="text" class="form-control" placeholder="Email" name="email" id="email">
+                               		
+										<div style="clear:both;"></div>
+										<div class="hidden-btns">
+											<a class="btn move" href="#"><i class="icon-move"></i></a><br> 
+										</div>
+                            		</div>
+                         		</div>
+							</div>
+						<div class="col-md-3 col-sm-3">
+                         <input type="submit" class="btn btn-primary" value="Subscribe" data-editfield="subscribe">
+						</div>
+                         <div style="clear:both;"></div>
+                        
+        </form>
+    </div>
+</div>
+<!--
+							<form action="https://my.sendinblue.com/users/subscribeembed/js_id/2abe8/id/1"
+								 onsubmit="return false;" id="theform" name="theform">
+								<div class="col-md-3 col-sm-3 "></div>
+								<div class="col-md-4 col-sm-3 ">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="First Name">
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Last Name">
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3">
-									<div class="form-group">
+										<input type="hidden" name="js_id" id="js_id" value="2abe8">
+										<input type="hidden" name="listid" id="listid" value="4">
+										<input type="hidden" name="from_url" id="from_url" value="yes">
 										<input type="email" class="form-control" placeholder="Email">
 									</div>
 								</div>
 								<div class="col-md-3 col-sm-3">
 									<div class="form-group">
-										<input type="submit" class="btn btn-primary" value="Subscribe">
+										<input type="submit" class="btn btn-primary" value="Subscribe" data-editfield="subscribe">
 									</div>
 								</div>
 							</form>
+-->
 						</div>
 					</div>
 				</div>
 
 			</div>
+			
+			
+			
+			
+
+
+<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=en"></script>
+
+<script>
+    var verifyCallback = function(response) {
+        if(response.length > 0) {
+            $(".captcha > div.row > div.message_area").remove();
+        }
+    };
+
+    var myCallBack = function() {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        if($('.captcha > div.row > div#gcaptcha').length > 0) {
+            var captcha = grecaptcha.render('gcaptcha', {
+              'sitekey' : '6LezqRkUAAAAACOopT30XBwc1_-zbarrSr8FIjXU',
+              'theme' : 'light',
+              'callback' : verifyCallback,
+            });
+        }
+    };
+</script>
+<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1504161199'></script>
+<!-- End : SendinBlue Signup Form HTML Code -->
 		</div>
 		<footer id="fh5co-footer" >
 			<div class="fh5co-overlay"></div>
@@ -581,6 +653,30 @@
 		});
 	  </script>
 
+		<script type="text/javascript">
+    var sib_prefix = 'sib';
+    var sib_dateformat = 'mm-dd-yyyy';
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit&hl=en"></script>
+
+<script>
+    var verifyCallback = function(response) {
+        if(response.length > 0) {
+            $(".captcha > div.row > div.message_area").remove();
+        }
+    };
+
+    var myCallBack = function() {
+        //Render the recaptcha1 on the element with ID "recaptcha1"
+        if($('.captcha > div.row > div#gcaptcha').length > 0) {
+            var captcha = grecaptcha.render('gcaptcha', {
+              'sitekey' : '6LezqRkUAAAAACOopT30XBwc1_-zbarrSr8FIjXU',
+              'theme' : 'light',
+              'callback' : verifyCallback,
+            });
+        }
+    };
+</script>
 	
 	</body>
 </html>
