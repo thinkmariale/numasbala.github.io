@@ -330,6 +330,9 @@ th {
   }
 }
 
+.player_img {
+	width: 100%;
+}
 .cd_img {
 	width: 70%;
 }

@@ -65,6 +65,7 @@
 			<li><a href="#" data-nav-section="music">Music</a></li>
 			<li><a href="#" data-nav-section="about">About</a></li>
 			<li><a href="#" data-nav-section="videos">Videos</a></li>
+			<li><a href="#" data-nav-section="players">Players</a></li>
 			<li><a href="#" data-nav-section="schedule">Events</a></li>
 			<li><a href="#" data-nav-section="media">Media</a></li>
 			<li><a href="#" data-nav-section="testimonies">Quotes</a></li>
@@ -116,6 +117,30 @@
 		</div>
 	  </div>
 	</div>
+	<!-- MODAL	1	-->
+	<div class="modal fade" id="myModal_player" tabindex="10" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Players</h4>
+		  </div>
+		  <div class="modal-body">
+			Player Selected :
+			  <style>
+				#loadImg{position:absolute;z-index:999;}
+				#loadImg div{display:table-cell;width:650px;background:#fff;text-align:center;vertical-align:middle;}
+				</style>
+			  
+
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+		  </div>
+		</div>
+	  </div>
+	</div>	
 	<!--  ENF MODAL -->
 	<div id="fh5co-page">
 		<div id="fh5co-wrap">
@@ -315,6 +340,61 @@
 					</div>
 				</div>
 				
+				<div id="fh5co-features" data-section="players" style="background-color:#000;">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+								<h2 class="fh5co-lead to-animate" style="color:#ffffff;">Pick a Player</h2>
+							
+							</div>
+							
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12" >
+								<a href="#" class="fh5co-feature to-animate" 
+								   data-toggle="modal" data-target="#myModal_player">
+									<figure class="effect-lexi" >
+									<img id = "cd_three" src="images/fotos/player_0.jpg" class="player_img"
+										 alt="funk latin/funk music" title="Mapas Perdidos CD" />
+									</figure>	
+									<h3 class="fh5co-feature-lead">2016</h3>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate" 
+								   data-toggle="modal" data-target="#myModal_player">
+									<figure class="effect-lexi" >
+									<img id = "cd_three" src="images/fotos/player_1.jpg"
+										 class="player_img"
+										 alt="funk latin/funk music" title="Operacion Conexion CD" />
+									</figure>	
+									<h3 class="fh5co-feature-lead">2015</h3>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate" 
+								   data-toggle="modal" data-target="#myModal_player">
+								   <figure class="effect-lexi">
+								   <img id ="cd_two" src="images/fotos/player_2.jpg" class="player_img"
+										alt="funk latin music" title="A Ver CD"/>	
+									</figure>
+									<h3 class="fh5co-feature-lead">2014</h3>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+								<a href="#" class="fh5co-feature to-animate" 
+								   data-toggle="modal" data-target="#myModal_player">
+								   <figure class="effect-lexi">
+								   <img id ="cd_two" src="images/fotos/player_3.jpg" class="player_img"
+										alt="funk latin music" title="A Ver CD"/>	
+									</figure>
+									<h3 class="fh5co-feature-lead">2014</h3>
+								</a>
+							</div>
+							
+
+			        	</div>
+			       </div>
+			    </div>
 				
 			    
 				  <div id="fh5co-schedule" data-section="schedule" style="background-image: url(images/space/dark2_med.png);  background-size: cover;">
