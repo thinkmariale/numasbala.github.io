@@ -695,16 +695,34 @@
 }());
 
 
-	 // function that sets what form is going to execute (new cd/ old cd)
+	// function that sets what form is going to execute (new cd/ old cd)
 	function setCD(cd) {
 			
-//	document.getElementById('loadImg').style.display='block';
-//	if(cd == 'mapas') {
-//		//document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3";
-//	}
-//	 else {
-//		//document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1";
-//	 }
- }
-		 
+		document.getElementById('loadImg').style.display='block';
+		if(cd == 'mapas') {
+			document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/3";
+		}
+		 else {
+			document.getElementById('cd_Iframe').src = "https://my.sendinblue.com/users/subscribe/js_id/2abe8/id/1";
+		 }
+ 	}
+	
+	// function that sets what form is going to execute (new cd/ old cd)
+	function setPlayer(player) {
+			
+		document.getElementById('artist').style.display='block';
+		if(player == 'capitan') {
+			document.getElementById('artist').innerHTML = "hello hello Capitan Placer";
+		}
+		 else if(player == 'n0') {
+			document.getElementById('artist').innerHTML = "hello hello N0";
+		 }
+		else if(player == 'n1') {
+			document.getElementById('artist').innerHTML = "hello hello  N1";
+		 }
+		else if(player == 'n2') {
+			document.getElementById('artist').innerHTML = "hello hello N2";
+		 }
+ 	}
+	
 	 
