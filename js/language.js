@@ -37,8 +37,8 @@ language.prototype.setEnglish = function() {
 		home : 'Home',
 		music : 'Music',
 		about : 'About',
-		videos: ' Videos',
-		players : 'Players',
+		videos: 'Videos',
+		players :'Players',
 		events : 'Events',
 		media : 'Media',
 		quotes : 'Quotes',
@@ -54,7 +54,7 @@ language.prototype.setSpanish = function() {
 		home : 'La Cubierta',
 		music : 'Música',
 		about : 'Nosotros',
-		videos: ' Video',
+		videos: 'Videos',
 		players : 'Players',
 		events : 'Eventos',
 		media : 'Midea',
@@ -109,7 +109,7 @@ language.prototype.setTitles = function() {
 			$('#music-title').html("Music");
 		}
 		if($('#music-title_1')){
-			$('#music-title_1').html("A collection of our latest intergalactic published work.");
+			$('#music-title_1').html("The collection of our latest intergalactic published work.");
 		}
 		if($('#music-title_2')){
 			$('#music-title_2').html("Enjoy our free downloads!");
