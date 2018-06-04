@@ -343,7 +343,7 @@ th {
 	width: 60%;
 }
 .main_logo_s  {
-	width: 30%;
+	width: 24%;
 }
 
 /*
@@ -7710,6 +7710,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .05em;
 }
 
+#intro_t {
+    padding-top: 100px;
+    
+}
 #intro_t  p  {
   font-size: 22px;
   line-height: 36px;
