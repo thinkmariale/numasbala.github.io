@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -6,6 +7,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'league_gothic';
+    src: url('../fonts/league_gothic/League_Gothic-webfont.eot');
+    src: url('../fonts/league_gothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/league_gothic/League_gothic-webfont.svg#league_gothicCnRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -317,12 +330,34 @@ th {
   }
 }
 
+.mm_img {
+	width: 100%;
+}
+.player_img {
+	width: 100%;
+}
 .cd_img {
 	width: 70%;
 }
 .main_logo {
 	width: 60%;
 }
+.main_logo_s  {
+	width: 30%;
+}
+
+/*
+@media (max-width: 700px) {
+  .player_img {
+	  width: 90%;
+    }
+}
+@media (max-width: 480px) {
+   .player_img {
+	  width: 30%;
+    }
+}
+*/
 
 
 /*---------*/
@@ -1411,7 +1446,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'league_gothic'; /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -7347,7 +7382,7 @@ button.close {
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "icomoon", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -7377,7 +7412,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "league_gothic", arial, sans-serif;
+  text-transform: uppercase;
+	letter-spacing: 2px;
   font-weight: 700;
 }
 
@@ -7594,7 +7631,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4em;
   height: 900px;
   z-index: 10;
-  background: #4fd2c2;
+  background: url("../images/space/dark_c.png") top left; 
+  background-size: cover;
   overflow: hidden;
 }
 #fh5co-hero .fh5co-overlay {
@@ -7612,8 +7650,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 2em;
     padding-bottom: 2em;
     height: inherit;
+	background: url("../images/space/dark_c_med.png") top left;   
+ background-size: cover;
   }
 }
+@media screen and (max-width: 485px) {
+  #fh5co-hero {
+	 background: url("../images/space/dark1_sm.png") top left;
+	  background-size: cover;
+  }
+}
+
 #fh5co-hero .fh5co-intro {
   width: 100%;
   color: #fff;
@@ -7624,7 +7671,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
   bottom: -5em;
 }
+
 @media screen and (max-width: 768px) {
+
   #fh5co-hero .fh5co-intro .fh5co-intro-img {
     bottom: -10em;
   }
@@ -7653,17 +7702,48 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
-  #fh5co-hero .fh5co-intro h2 {
-    font-size: 40px;
-    line-height: 40px;
-  }
-}
-#fh5co-hero .fh5co-intro p {
-  font-size: 18px;
-  line-height: 26px;
+
+
+#fh5co-hero .fh5co-music p {
+  font-size: 15px;
+  line-height: 22px;
   letter-spacing: .05em;
 }
+
+#intro_t  p  {
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: .1em;
+  font-family:league_gothic;
+  font-weight: normal;
+}
+
+.fh5co-music {
+	padding-top:130px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .fh5co-intro h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .fh5co-music {
+	padding-top:40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #fh5co-hero .fh5co-intro h2 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  #fh5co-hero .fh5co-intro p {
+    font-size: 15px;
+    letter-spacing: .05em;
+  }
+ .fh5co-music {
+	padding-top:40px;
+  }
+}
+
 #fh5co-hero .fh5co-intro .btn {
   background: #30beac;
 }
@@ -7679,16 +7759,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand {
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 35px;
   float: left !important;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "league_gothic", arial, sans-serif;
   color: #fff;
   z-index: 10;
   position: relative;
@@ -7700,7 +7780,7 @@ h1, h2, h3, h4, h5, h6 {
   *display: inline;
   float: left;
   border: 2px solid #fff;
-  padding: 7px 10px 7px 12px;
+  padding: 10px 10px 8px 12px;
 }
 .navbar-brand:hover {
   color: #fff;
@@ -7740,13 +7820,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 768px) {
   #fh5co-clients .fh5co-client {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-clients .fh5co-client img {
     max-width: 100%;
   }
+   #fh5co-clients {
+	   padding-bottom: 0px;
+	   padding-top: 15px;
+   }
 }
 
 #fh5co-pricing {
@@ -7774,7 +7858,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-subscribe {
-  padding: 4em 0 3em 0;
+  padding: 1em 0 0em 0;
   position: relative;
   background: #4fd2c2;
 }
@@ -7848,10 +7932,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-features-2 {
-  background: #fff;
+	background: url("../images/space/light2_med.png") top left; 
+	background-size: cover;
 }
 
-
+@media screen and (max-width: 768px) {
+  #fh5co-features-2 {
+	background: url("../images/space/light2_med_m.png") top left; 
+	background-size: cover;
+  }
+}
+@media screen and (max-width: 485px) {
+  #fh5co-features-2 {
+	background: url("../images/space/light2_sm.png") top left; 
+	background-size: cover;
+  }
+}
+	
 #fh5co-features-3 .fh5co-text-wrap {
   margin-bottom: 2em;
 }
@@ -8185,6 +8282,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #4fd2c2;
   color: #fff;
   padding: 8em 0;
+ font-family: league_gothic;
+	font-weight: normal;
 }
 #fh5co-testimony .fh5co-vcard img {
   width: 170px;
@@ -8247,12 +8346,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #545854;
 }
 
+#fh5co-features-2 {
+	background: url("../images/space/light2_med.png") top left; 
+	background-size: cover;
+}
 
+
+	
 #fh5co-schedule {
   background: #4fd2c2;
   color: #fff;
   padding: 8em 0;
-
+  background: url("../images/space/dark2_med.png") top left; 
+  background-size: cover;
 }
 #fh5co-schedule .fh5co-vcard img {
   width: 70px;
@@ -8271,12 +8377,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 120px;
     height: 120px;
   }
+  #fh5co-schedule {
+    background: url("../images/space/dark2_med_m.png") top left; 
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 480px) {
   #fh5co-schedule .fh5co-vcard img {
     width: 60px;
     height: 60px;
     margin: 0 auto 20px auto;
+  }
+	
+   #fh5co-schedule {
+    background: url("../images/space/dark2_sm.png") top left; 
+    background-size: cover;
   }
 }
 #fh5co-schedule blockquote {
@@ -8531,7 +8646,7 @@ pre {
   color: #878c93;
   position: fixed;
   bottom: 0;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
 }
 #fh5co-footer .fh5co-overlay {
@@ -8590,12 +8705,13 @@ pre {
   margin-bottom: 20px;
 }
 #fh5co-footer .fh5co-footer-logo a {
-  font-family: "Montserrat", arial, sans-serif;
-  font-size: 30px;
+  font-family: "league_gothic", arial, sans-serif;
+  font-size: 45px;
   letter-spacing: 2px;
   color: #ccc;
   border: 2px solid #9a9fa5;
-  
+	    font-weight: normal;
+
   padding: 7px 10px 7px 12px;
   text-transform: uppercase;
 }
