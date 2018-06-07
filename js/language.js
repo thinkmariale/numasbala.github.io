@@ -91,10 +91,10 @@ language.prototype.setTitles = function() {
 			$('#music-title').html("Música");
 		}
 		if($('#music-title_1')){
-			$('#music-title_1').html("Nuestra coleccion de ritmos intergatacticos publicados.");
+			$('#music-title_1').html("Numasbala se construye en el 2006 liderado por Fabio Montenegro (El Capitán Placer) con el propósito de crear un vehículo transmisor capaz de comunicar ideas y emociones, poder generar preguntas y posibles respuestas a través de sonidos, letras y ritmos que contribuyan al bienestar de su público.");
 		}
 		if($('#music-title_2')){
-			$('#music-title_2').html("Disfruta nuestras descargas gratis!");
+			$('#music-title_2').html("<br/> Disfruta gratis nuestra colección de ritmos intergatacticos publicados!");
 		}
 		if($('#contact-title')){
 			$('#contact-title').html("Contactanos");
