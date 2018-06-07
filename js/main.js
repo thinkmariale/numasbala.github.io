@@ -717,28 +717,26 @@
 			document.getElementById('myModalLabel_1').innerHTML = "Capit&aacute;n Placer (voz, bajo)";
 			document.getElementById('artist').innerHTML = "Encargado de pescar los mapas y fijar la direcci&oacute;n de la nave <br> Numasbala. Perseguido por la destruccion de su planeta y por llevar a cabo supuestas misiones no autorizadas en las galaxias a&uacute;n en guerra. Camale&oacute;n Cosmico maestro del disfraz.";
 			
-			document.getElementById('atuendo').innerHTML  = "Gorra de Capit&aacute;n."
+			//document.getElementById('atuendo').innerHTML  = "Gorra de Capit&aacute;n."
 		}
 		 else if(player == 'n0') {
 			document.getElementById('myModalLabel_1').innerHTML = "Ficci&oacute;n (bateria y coros)";
 			document.getElementById('artist').innerHTML = "Encargado de la propulsion de la nave. Dice la leyenda que ha sido el &uacute;nico capaz de escapar de un hoyo negro. Conoci&oacute; la verdad y es perseguido por esto. Se camufla entre la verdad y la ficci&oacute;n.";
 			 
-			document.getElementById('atuendo').innerHTML  = "Pantal&oacute;n camuflado, pa&ntilde;oleta."
+			//document.getElementById('atuendo').innerHTML  = "Pantal&oacute;n camuflado, pa&ntilde;oleta."
 		 }
 		else if(player == 'n1') {
 			document.getElementById('myModalLabel_1').innerHTML = "El Pulpo (percusi&oacute;n y coros)";
 			document.getElementById('artist').innerHTML = "Timonel del barco. Encargado de abrir portales interdimensionales, transportando as&iacute; la nave. Tiene el manejo de las 8 energias.";
 			
-			document.getElementById('atuendo').innerHTML  = "Gorro con 8 tent&aacute;culos, sisa y tirantas."
-
+			//document.getElementById('atuendo').innerHTML  = "Gorro con 8 tent&aacute;culos, sisa y tirantas."
 		 }
 		else if(player == 'n2') {
 			document.getElementById('myModalLabel_1').innerHTML = "Goliardo (guitarra y corors)";
 
 			document.getElementById('artist').innerHTML = "Monje terr&iacute;cola del siglo XXII A.C. con la capacidad de viajar en el tiempo. Lo acompa&ntilde;a su fascinaci&oacute;n por la m&uacute;sica, la fiesta y la cerveza.";
 			
-			document.getElementById('atuendo').innerHTML  = "Chaleco / sisa, gafas y bobina."
-
+			//document.getElementById('atuendo').innerHTML  = "Chaleco / sisa, gafas y bobina."
 		 }
  	}
 	
