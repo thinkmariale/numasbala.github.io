@@ -733,7 +733,7 @@
 
 		 }
 		else if(player == 'n2') {
-			document.getElementById('myModalLabel_1').innerHTML = "Goliador (guitarra y corors)";
+			document.getElementById('myModalLabel_1').innerHTML = "Goliardo (guitarra y corors)";
 
 			document.getElementById('artist').innerHTML = "Monje terr&iacute;cola del siglo XXII A.C. con la capacidad de viajar en el tiempo. Lo acompa&ntilde;a su fascinaci&oacute;n por la m&uacute;sica, la fiesta y la cerveza.";
 			
