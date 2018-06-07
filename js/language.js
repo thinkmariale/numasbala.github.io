@@ -27,7 +27,7 @@ function changeLang(lang){
 
 function language() {
 	this.navBar= {};
-	this.current = 'ES';	
+	this.current = 'EN';	
 }
 
 language.prototype.setEnglish = function() {
