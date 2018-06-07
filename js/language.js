@@ -38,7 +38,7 @@ language.prototype.setEnglish = function() {
 		music : 'Music',
 		about : 'About',
 		videos: 'Videos',
-		players :'Players',
+		players :'Crew',
 		events : 'Events',
 		media : 'Media',
 		quotes : 'Quotes',
@@ -55,7 +55,7 @@ language.prototype.setSpanish = function() {
 		music : 'Música',
 		about : 'Nosotros',
 		videos: 'Videos',
-		players : 'Players',
+		players : 'Tripulación',
 		events : 'Eventos',
 		media : 'Midea',
 		quotes : 'Quotes',
@@ -96,6 +96,9 @@ language.prototype.setTitles = function() {
 		if($('#music-title_2')){
 			$('#music-title_2').html("<br/> Disfruta gratis nuestra colección de ritmos intergatacticos publicados!");
 		}
+        if($('#crew-title')){
+			$('#crew-title').html("Tripulación");
+		}
 		if($('#contact-title')){
 			$('#contact-title').html("Contactanos");
 		}
@@ -113,6 +116,9 @@ language.prototype.setTitles = function() {
 		}
 		if($('#music-title_2')){
 			$('#music-title_2').html("Enjoy our free downloads!");
+		}
+         if($('#crew-title')){
+			$('#crew-title').html("Crew");
 		}
 		if($('#contact-title')){
 			$('#contact-title').html("Contact Us");
