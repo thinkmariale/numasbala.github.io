@@ -8267,12 +8267,17 @@ background: #FF4545;
     font-style: normal;
     color:beige;
     padding-right: 50px;
+    padding-left: 30px;
+    text-align: justify:
+
 }
 .fh5co-p-mm {
     font-size: 22px;
      letter-spacing: 2px;
-    
     font-family: "andale_monoregular", times, serif;
+     padding-right: 30px;
+    padding-left: 30px;
+    text-align: justify:
 }
 .fh5co-p-s {
     font-size: 18px;
