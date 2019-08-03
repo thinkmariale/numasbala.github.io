@@ -1488,7 +1488,7 @@ textarea {
 }
 
 a {
-  color: #FF4545;
+  color: #00d5c7;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -1718,7 +1718,7 @@ mark,
 }
 
 .text-primary {
-  color: #FF4545;
+  color: #00d5c7;
 }
 
 a.text-primary:hover,
@@ -1767,7 +1767,7 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-  background-color: #FF4545;
+  background-color: #00d5c7;
 }
 
 a.bg-primary:hover,
@@ -3229,7 +3229,7 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
-  border-color: #FF4545;
+  border-color: #00d5c7;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(79, 210, 194, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(79, 210, 194, 0.6);
@@ -3811,7 +3811,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #FF4545;
+  background-color: #00d5c7;
   border-color: #3bcdbb;
 }
 .btn-primary:focus, .btn-primary.focus {
@@ -3838,11 +3838,11 @@ a.btn.disabled, fieldset[disabled] a.btn {
   background-image: none;
 }
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #FF4545;
+  background-color: #00d5c7;
   border-color: #3bcdbb;
 }
 .btn-primary .badge {
-  color: #FF4545;
+  color: #00d5c7;
   background-color: #fff;
 }
 
@@ -7654,9 +7654,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding-top: 4em;
   padding-bottom: 4em;
-  height: 900px;
+  height: 1200px;
   z-index: 10;
-  background: url("../images/space/star_background@2x.png") top left; 
+  /*background: url("../images/space/star_background@2x.png") top left; */
+  background-color: white;
   background-size: cover;
   overflow: hidden;
 }
@@ -7667,7 +7668,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   z-index: 9;
-  background: #3b3d40;
+  background: #FFF;
   opacity: .5;
 }
 @media screen and (max-width: 768px) {
@@ -7675,14 +7676,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 2em;
     padding-bottom: 2em;
     height: inherit;
-	background: url("../images/space/star_background.png") top left;   
+    background-color: white;
+	/* background: url("../images/space/star_background.png") top left;  */
  background-size: cover;
   }
 }
 @media screen and (max-width: 485px) {
   #fh5co-hero {
-	 background: url("../images/space/star_background.png") top left;
-	  background-size: cover;
+	 /* background: url("../images/space/star_background.png") top left;  */
+     background-size: cover;
   }
 }
 
@@ -7798,7 +7800,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 35px;
   float: left !important;
   font-family: "league_gothic", arial, sans-serif;
-  color: #fff;
+  color: #000;
   z-index: 10;
   position: relative;
 }
@@ -7808,11 +7810,11 @@ h1, h2, h3, h4, h5, h6 {
   zoom: 1;
   *display: inline;
   float: left;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   padding: 10px 10px 8px 12px;
 }
 .navbar-brand:hover {
-  color: #fff;
+  color: #00d5c7;
   opacity: .8;
 }
 @media screen and (max-width: 480px) {
@@ -7825,18 +7827,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .scrolled .navbar-brand {
-  color: #444;
+  color: #000;
 }
 .scrolled .navbar-brand:hover {
-  color: #000;
+  color: #00d5c7;
 }
 .scrolled .navbar-brand > span {
   border-color: #444;
 }
 
 #fh5co-clients {
-  padding: 2em 0;
-background: #FF4545;
+  padding: 1.02em 0;
+  background: #00d5c7;
 /*  background: #4fd2c2;*/
   position: relative;
 }
@@ -7890,7 +7892,7 @@ background: #FF4545;
 #fh5co-subscribe {
   padding: 1em 0 0em 0;
   position: relative;
-  background: #FF4545;
+  background: #00d5c7;
 }
 #fh5co-subscribe .form-control {
   color: #fff;
@@ -7914,7 +7916,7 @@ background: #FF4545;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: #C43333;
+  background: #328c86;
 }
 #fh5co-subscribe .btn i {
   font-size: 20px;
@@ -7962,37 +7964,38 @@ background: #FF4545;
 }
 
 #fh5co-features-2 {
-	background: url("../images/space/star_background@2x.png") top left; 
+	/* background: url("../images/space/star_background@2x.png") top left; */
 	background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
   #fh5co-features-2 {
-	background: url("../images/space/star_background.png") top left; 
+	/*background: url("../images/space/star_background.png") top left; */
 	background-size: cover;
   }
 }
 @media screen and (max-width: 485px) {
   #fh5co-features-2 {
-	background: url("../images/space/star_background.png") top left; 
+	/*background: url("../images/space/star_background.png") top left; */
 	background-size: cover;
   }
 }
 
 #fh5co-features-3 {
-	background: url("../images/space/light2_med.png") top left; 
+   
+	/*background: url("../images/space/light2_med.png") top left; */
 	background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
   #fh5co-features-3 {
-	background: url("../images/space/light2_med_m.png") top left; 
+	/*background: url("../images/space/light2_med_m.png") top left; */
 	background-size: cover;
   }
 }
 @media screen and (max-width: 485px) {
   #fh5co-features-3 {
-	background: url("../images/space/light2_sm.png") top left; 
+	/*background: url("../images/space/light2_sm.png") top left; */
 	background-size: cover;
   }
 }
@@ -8026,7 +8029,7 @@ background: #FF4545;
   margin-bottom: 20px;
 }
 #fh5co-features-3 .fh5co-icon i {
-  color: #FF4545;
+  color: #00d5c7;
 }
 
 #fh5co-features-2 .fh5co-text-wrap {
@@ -8286,6 +8289,7 @@ background: #FF4545;
 }
 /*Montserrat*/
 .fh5co-uppercase-sm {
+  
   font-size: 22px;
   letter-spacing: 2px;
   font-family: "Montserrat", arial, sans-serif;
@@ -8362,7 +8366,7 @@ background: #FF4545;
 
 
 #fh5co-testimony {
-  background: #FF4545;
+  background: #000;
   color: #fff;
   padding: 8em 0;
  font-family: league_gothic;
@@ -8399,7 +8403,8 @@ background: #FF4545;
 #fh5co-testimony blockquote {
   padding: 0;
   border-left: none;
-  color: #545854;
+ color:#00d5c7;
+  /* color: #545854; */
 }
 @media screen and (max-width: 480px) {
   #fh5co-testimony blockquote {
@@ -8426,25 +8431,25 @@ background: #FF4545;
   }
 }
 #fh5co-testimony .fh5co-author > span {
-  color: #545854;
+  color: #519691;
 }
 
 #fh5co-features-2 {
-	background: url("../images/space/star_background@2x.png") top left; 
+	/*background: url("../images/space/star_background@2x.png") top left; */
 	background-size: cover;
 }
 
 #fh5co-features-3 {
-	background: url("../images/space/light2_med.png") top left; 
+	/*background: url("../images/space/light2_med.png") top left; */
 	background-size: cover;
 }
 
 	
 #fh5co-schedule {
-  background: #FF4545;
+  background: #00d5c7;
   color: #fff;
   padding: 8em 0;
-  background: url("../images/space/dark2_med.png") top left; 
+ /* background: url("../images/space/dark2_med.png") top left; */
   background-size: cover;
 }
 #fh5co-schedule .fh5co-vcard img {
@@ -8511,7 +8516,7 @@ background: #FF4545;
   }
 }
 #fh5co-schedule .fh5co-date > span {
-  color: #FF4545;
+  color: #00d5c7;
   font-size: 15px;
 }
 
@@ -8558,7 +8563,7 @@ background: #FF4545;
   vertical-align: middle;
 }
 .fh5co-bg-section .fh5co-hero-wrap .fh5co-hero-intro .fh5co-lead, .fh5co-bg-section .fh5co-hero-wrap .fh5co-hero-intro .fh5co-sub-lead {
-  color: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -8644,13 +8649,13 @@ pre {
   color: #2a2e37;
 }
 .btn-outline:hover, .btn-outline:active, .btn-outline:focus {
-  border: 2px solid #FF4545 !important;
-  background: #FF4545 !important;
+  border: 2px solid #00d5c7 !important;
+  background: #00d5c7 !important;
   color: #fff;
 }
 
 .btn-primary {
-  background: #FF4545;
+  background: #00d5c7;
 }
 
 .btn-success {
@@ -8686,7 +8691,7 @@ pre {
 .form-control:hover, .form-control:focus, .form-control:active {
   outline: none;
   box-shadow: none !important;
-  border: 2px solid #FF4545;
+  border: 2px solid #00d5c7;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -8783,7 +8788,7 @@ pre {
   color: #9a9fa5;
 }
 #fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
-  color: #FF4545;
+  color: #00d5c7;
 }
 #fh5co-footer .fh5co-footer-logo {
   display: block;
@@ -8927,7 +8932,7 @@ pre {
 }
 
 .fh5co-colored {
-  color: #FF4545;
+  color: #00d5c7;
 }
 
 .image-popup {
@@ -8939,7 +8944,7 @@ pre {
 
 .fh5co-social-icons > a {
   margin-right: 10px;
-  color: #FF4545;
+  color: #00d5c7;
 }
 .fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
   text-decoration: none;
@@ -8950,9 +8955,11 @@ pre {
   height: 25px;
   cursor: pointer;
   text-decoration: none;
+  
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #fff;
+  background: #000;
+    
 }
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
@@ -8966,18 +8973,19 @@ pre {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #fff;
+  color: #000;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #fff;
+  background: #000;
   transition: all .2s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #00d5c7;
+  color:#000;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -8991,7 +8999,7 @@ pre {
   background: #000;
 }
 .scrolled .fh5co-nav-toggle i::before, .scrolled .fh5co-nav-toggle i::after {
-  background: #000;
+  background: #00d5c7;
 }
 
 .fh5co-nav-toggle i::before {
@@ -9056,7 +9064,7 @@ pre {
   z-index: 99;
   width: 100px;
   margin-top: 12px;
-  color: #fff;
+  color: #000;
   margin-left: -70px;
   font-family: "Montserrat", arial, sans-serif;
   letter-spacing: 2px;
