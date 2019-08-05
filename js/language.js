@@ -93,10 +93,10 @@ language.prototype.setTitles = function() {
 			$('#music-title').html("Música");
 		}
 		if($('#music-title_1')){
-			$('#music-title_1').html("Numasbala se construye en el 2006 liderado por Fabio Montenegro (El Capitán Placer) con el propósito de crear un vehículo transmisor capaz de comunicar ideas y emociones, poder generar preguntas y posibles respuestas a través de sonidos, letras y ritmos que contribuyan al bienestar de su público.");
+			$('#music-title_1').html("Numasbala se construye en el 2006 por Fabio Montenegro (El Capitán Placer) en su búsqueda por crear un vehiculo de corazón transmisor de ideas y emociones. <br/> Mitica nave intergaláctica, pacificadora de galaxias. Numasbala busca contribuir al bienestar de todos aquellos que entren en contacto con ella.");
 		}
 		if($('#music-title_2')){
-			$('#music-title_2').html("<br/> Disfruta gratis nuestra colección de ritmos intergatacticos publicados!");
+			$('#music-title_2').html("<br/> Disfruta nuestra colección de música intergaláctica!");
 		}
         if($('#crew-title')){
 			$('#crew-title').html("Tripulación");
@@ -114,10 +114,10 @@ language.prototype.setTitles = function() {
 			$('#music-title').html("Music");
 		}
 		if($('#music-title_1')){
-			$('#music-title_1').html("The collection of our latest intergalactic published work.");
+			$('#music-title_1').html("Numasbala was discovered in 2006 by Fabio Montenegro (El Capitán Placer) in his search to create a heart transmitting vehicle for ideas and emotions. <br/> Mythical intergalactic ship, pacifier of galaxies. Numasbala strives to contribute to the wellbeing of all who come into contact with her.");
 		}
 		if($('#music-title_2')){
-			$('#music-title_2').html("Enjoy our free downloads!");
+			$('#music-title_2').html("Enjoy our collection of intergalactic music!");
 		}
          if($('#crew-title')){
 			$('#crew-title').html("Crew");
